@@ -1,0 +1,33 @@
+{
+  "dataSource": "ChatGPT-Data",
+  "packageName": "chatgpt-data-dump",
+  "packageVersion": "v1",
+  "created": "2026-06-10",
+  "purpose": "Manual GitHub Desktop / VS Code data source for ChatGPT-assisted projects.",
+  "versioningModel": {
+    "folderPattern": "/area/area-vN/area-vN-file-name.ext",
+    "examples": [
+      "/citadel/citadel-v1/citadel-v1-manifest.json",
+      "/citadel/citadel-v1/rooms/citadel-v1-room-index.json",
+      "/people-index/people-index-v1/people-index-v1.json"
+    ],
+    "rule": "When publishing a new version to GitHub, create a new self-describing area-vN folder and use filenames that include the area and version."
+  },
+  "activeVersions": {
+    "people-index": "people-index-v1",
+    "citadel": "citadel-v1",
+    "test": "test-v1"
+  },
+  "targetedGenerationRule": "Files can be regenerated individually because each folder and filename identifies its area, version, and purpose.",
+  "protocols": {
+    "manualSync": "ChatGPT generates clean downloadable files; user commits them manually through VS Code or GitHub Desktop.",
+    "neverOverwritePublishedHistory": "When saving to GitHub, create the next version folder instead of overwriting an existing published folder.",
+    "localWorkingFiles": "Local working files may be regenerated or replaced during iteration before being committed.",
+    "highestVersionRule": "When loading from GitHub, prefer the highest numbered area-vN folder visible in the target area."
+  },
+  "topLevelAreas": [
+    "people-index",
+    "citadel",
+    "test"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "codexName": "Great Citadel Codex Core",
+  "version": "v1",
+  "created": "2026-06-10",
+  "definition": "The Citadel is a navigable symbolic interface for organizing real-world knowledge, personal memory, media collections, technical projects, and life systems.",
+  "coreRules": [
+    "Rooms should represent real-world things, tools, collections, habits, or information systems.",
+    "Favor discoverability over abstract lore.",
+    "A room can be imaginative in appearance, but its purpose should map to something useful.",
+    "Citadel data should be saved in clean, readable JSON or Markdown.",
+    "Published GitHub files should use version folders rather than overwriting prior versions.",
+    "Targeted file generation is supported when the requested file is clearly named."
+  ],
+  "activeConcepts": [
+    "personal knowledge palace",
+    "rooms and stations",
+    "People Index / Embassy Archive",
+    "manual GitHub sync",
+    "highest version loading",
+    "targeted file regeneration"
+  ]
+}

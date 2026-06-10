@@ -1,0 +1,16 @@
+{
+  "renderName": "Citadel Render Core",
+  "version": "v1",
+  "created": "2026-06-10",
+  "knownVisualDirection": {
+    "outsideCitadel": "Medium-sized domed steampunk-fantasy Citadel on a rocky mountain peak above clouds.",
+    "composition": "16:9 elevated aerial oblique view from above looking northwest.",
+    "bridgeRule": "Bridge extends southwest.",
+    "style": "Steampunk fantasy, architectural, atmospheric, navigable."
+  },
+  "renderChecklist": [
+    "Respect established compass and viewpoint rules when applicable.",
+    "Make rooms readable as real-world functional spaces.",
+    "Prefer practical symbolic details over random decoration."
+  ]
+}

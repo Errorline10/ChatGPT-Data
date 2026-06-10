@@ -1,0 +1,21 @@
+{
+  "schemaName": "people-index-schema",
+  "version": "v1",
+  "created": "2026-06-10",
+  "recordType": "person",
+  "fields": {
+    "id": "Stable unique person id.",
+    "displayName": "Preferred display name.",
+    "knownNames": "Alternate names, nicknames, or memory anchors.",
+    "relationship": "How this person is known.",
+    "contexts": "Places, projects, groups, or situations where this person appears.",
+    "roles": "Known roles or titles.",
+    "faceMemoryNotes": "Visual/person-recognition notes. Avoid creepy or overly sensitive details.",
+    "conversationNotes": "Useful remembered interaction notes.",
+    "imageRefs": "Relative paths to images in people-index/people-index-v1/images.",
+    "relatedPeople": "Other person ids.",
+    "relatedCitadelEntries": "Citadel room or codex ids connected to this person.",
+    "privacyLevel": "public, personal, sensitive, or private.",
+    "lastUpdated": "YYYY-MM-DD."
+  }
+}

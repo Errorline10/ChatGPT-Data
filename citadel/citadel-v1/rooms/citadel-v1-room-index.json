@@ -1,0 +1,133 @@
+{
+  "indexName": "Citadel Room Index",
+  "version": "v1",
+  "created": "2026-06-10",
+  "rooms": [
+    {
+      "id": "citadel-room-weather-station",
+      "name": "Weather Station",
+      "wing": "Information Wing",
+      "represents": "Weather forecasts, climate awareness, storm tracking, and daily conditions.",
+      "realWorldEquivalent": "Weather app / meteorological dashboard"
+    },
+    {
+      "id": "citadel-room-news-room",
+      "name": "News Room",
+      "wing": "Information Wing",
+      "represents": "Current events and world awareness.",
+      "realWorldEquivalent": "News reader / briefing desk"
+    },
+    {
+      "id": "citadel-room-world-map-room",
+      "name": "World Map Room",
+      "wing": "Information Wing",
+      "represents": "Places, travel, geography, and global context.",
+      "realWorldEquivalent": "Atlas / travel planning map"
+    },
+    {
+      "id": "citadel-room-astronomy-observatory",
+      "name": "Astronomy Observatory",
+      "wing": "Information Wing",
+      "represents": "Sky events, space, astronomy, moon phases, and celestial tracking.",
+      "realWorldEquivalent": "Observatory / planetarium app"
+    },
+    {
+      "id": "citadel-room-timekeeping-chamber",
+      "name": "Timekeeping Chamber",
+      "wing": "Information Wing",
+      "represents": "Calendars, clocks, timelines, reminders, and scheduling.",
+      "realWorldEquivalent": "Calendar / clock / reminder system"
+    },
+    {
+      "id": "citadel-room-journal-archive",
+      "name": "Journal Archive",
+      "wing": "Personal Knowledge Wing",
+      "represents": "Personal reflections, logs, and written memory.",
+      "realWorldEquivalent": "Journal / diary archive"
+    },
+    {
+      "id": "citadel-room-memory-hall",
+      "name": "Memory Hall",
+      "wing": "Personal Knowledge Wing",
+      "represents": "Important memories, recurring concepts, and personal history.",
+      "realWorldEquivalent": "Memory palace / life archive"
+    },
+    {
+      "id": "citadel-room-correspondence-library",
+      "name": "Correspondence Library",
+      "wing": "Personal Knowledge Wing",
+      "represents": "Emails, letters, messages, and communication records.",
+      "realWorldEquivalent": "Mailbox / correspondence archive"
+    },
+    {
+      "id": "citadel-room-idea-workshop",
+      "name": "Idea Workshop",
+      "wing": "Personal Knowledge Wing",
+      "represents": "Brainstorming, concepts, inventions, and project seeds.",
+      "realWorldEquivalent": "Notebook / whiteboard / idea board"
+    },
+    {
+      "id": "citadel-room-dream-archive",
+      "name": "Dream Archive",
+      "wing": "Personal Knowledge Wing",
+      "represents": "Dream notes, symbolic ideas, and imagination records.",
+      "realWorldEquivalent": "Dream journal"
+    },
+    {
+      "id": "citadel-room-embassy-archive",
+      "name": "Embassy Archive",
+      "wing": "Personal Knowledge Wing",
+      "represents": "People Index records, portraits, contacts, relationship history, and meeting records.",
+      "realWorldEquivalent": "People index / contacts / personal CRM"
+    },
+    {
+      "id": "citadel-room-dvd-bluray-library",
+      "name": "DVD/Blu-ray Library",
+      "wing": "Media Wing",
+      "represents": "Physical movie collection and film memory.",
+      "realWorldEquivalent": "DVD/Blu-ray collection"
+    },
+    {
+      "id": "citadel-room-music-conservatory",
+      "name": "Music Conservatory",
+      "wing": "Media Wing",
+      "represents": "Music collection, playlists, instruments, and listening history.",
+      "realWorldEquivalent": "Music library / stereo room"
+    },
+    {
+      "id": "citadel-room-video-game-vault",
+      "name": "Video Game Vault",
+      "wing": "Media Wing",
+      "represents": "Games, consoles, saves, and gaming history.",
+      "realWorldEquivalent": "Game collection"
+    },
+    {
+      "id": "citadel-room-book-library",
+      "name": "Book Library",
+      "wing": "Media Wing",
+      "represents": "Books, reading lists, references, and notes.",
+      "realWorldEquivalent": "Library / bookshelf"
+    },
+    {
+      "id": "citadel-room-programming-laboratory",
+      "name": "Programming Laboratory",
+      "wing": "Technical Wing",
+      "represents": "Code, development work, debugging, and software projects.",
+      "realWorldEquivalent": "IDE / dev workspace"
+    },
+    {
+      "id": "citadel-room-ai-chamber",
+      "name": "AI Chamber",
+      "wing": "Technical Wing",
+      "represents": "AI workflows, prompts, models, tools, and assistants.",
+      "realWorldEquivalent": "AI control room"
+    },
+    {
+      "id": "citadel-room-project-management-center",
+      "name": "Project Management Center",
+      "wing": "Technical Wing",
+      "represents": "Tasks, milestones, plans, and active projects.",
+      "realWorldEquivalent": "Project board / kanban system"
+    }
+  ]
+}

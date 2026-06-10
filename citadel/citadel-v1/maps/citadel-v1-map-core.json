@@ -1,0 +1,17 @@
+{
+  "mapName": "Citadel Map Core",
+  "version": "v1",
+  "created": "2026-06-10",
+  "description": "Starter map metadata for organizing Citadel rooms by wing.",
+  "wings": [
+    "Information Wing",
+    "Personal Knowledge Wing",
+    "Media Wing",
+    "Technical Wing",
+    "Collection Wing"
+  ],
+  "notes": [
+    "Map layout is intentionally provisional.",
+    "Future versions can add coordinates, adjacency, floor numbers, and navigation links."
+  ]
+}

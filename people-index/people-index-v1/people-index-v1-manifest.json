@@ -1,0 +1,17 @@
+{
+  "area": "people-index",
+  "version": "v1",
+  "folderName": "people-index-v1",
+  "status": "active",
+  "previousVersion": null,
+  "nextVersion": null,
+  "created": "2026-06-10",
+  "requiredFiles": [
+    "people-index-v1-bootstrap.md",
+    "people-index-v1-schema.json",
+    "people-index-v1.json"
+  ],
+  "requiredFolders": [
+    "images"
+  ]
+}
