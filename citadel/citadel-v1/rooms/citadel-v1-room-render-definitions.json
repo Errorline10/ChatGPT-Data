@@ -1,0 +1,129 @@
+{
+  "name": "Citadel Room Render Definitions",
+  "packageVersion": "citadel-v1",
+  "sourceCodexVersion": "v3.2",
+  "created": "2026-06-10",
+  "generalRoomRenderRule": {
+    "visualLanguage": "ancient, warm, lived-in, human-scaled Citadel architecture",
+    "defaultFormat": "16:9 horizontal",
+    "forwardHemisphereRule": "Standard room renderings show only the forward hemisphere unless map, diagram, overview, 360 panorama, blueprint, door render, exterior overview, or special reference view is requested.",
+    "viewerRule": "Viewer stands at true geometric center and faces canonical North by default. If another direction is requested, only the viewer rotates."
+  },
+  "connectedRoomViewDerivationRule": [
+    "When an open canonical doorway reveals a destination room, derive the visible portion from that destination room's canonical definition.",
+    "Do not use generic phrases like 'the room beyond'.",
+    "Connected-room descriptions must be canonical, concise, and secondary unless the request focuses on the doorway view."
+  ],
+  "noOverlayNoTextRule": "No Citadel image may include overlays, labels, arrows, compass markings, UI elements, captions, explanatory signs, or words unless explicitly requested.",
+  "rooms": {
+    "Entry Hall": {
+      "purpose": "Southernmost entrance and first threshold space.",
+      "connections": "North Door -> Small Library; South Door -> Outside / Arrival; West Door -> Garden.",
+      "visualIdentity": "Narrow welcoming passage, longer than wide, cozy, ancient, lived-in, cared for, practical, safe, inviting.",
+      "requiredFeatures": [
+        "side tables",
+        "coat hooks",
+        "cloaks or jackets",
+        "travel bags",
+        "warm lantern light",
+        "wood-softened stone architecture",
+        "plants/vines/moss where appropriate",
+        "worn stone floor",
+        "clear forward path"
+      ],
+      "northFacingSpec": "North Door centered or near-centered ahead and open by default; Small Library visible beyond; West Door visible on left wall; South Door behind viewer and not visible.",
+      "openDoorDerivations": {
+        "northDoor": "Visible bookshelves, reading tables, lecterns, maps, writing tools, lantern-lit study areas, introductory collections, historical records, scholarly materials.",
+        "westDoor": "Visible vine-covered stone boundary walls, warm daylight, raked sand, stacked Zen stones, modest plants, lanterns or garden lights, calm meditative Garden atmosphere."
+      }
+    },
+    "Garden": {
+      "purpose": "Meditation branch space connected to Entry Hall.",
+      "requiredFeatures": [
+        "old vine-covered stone boundary walls",
+        "open sky",
+        "warm daylight",
+        "distant mountains",
+        "a few tiny faraway steampunk blimps",
+        "dry raked sand Zen garden",
+        "stacked Zen stones",
+        "modest plants",
+        "lanterns or garden lights",
+        "exactly one small Buddha statue in northwest corner"
+      ],
+      "feel": [
+        "open",
+        "airy",
+        "happy",
+        "dry",
+        "bright",
+        "calm",
+        "meditative",
+        "restorative",
+        "human-scaled",
+        "cared for",
+        "lightly cultivated",
+        "spiritually quiet"
+      ],
+      "buddhaVisibilityRules": [
+        "One Buddha only, fixed in northwest corner.",
+        "In a west-facing render it should appear on the right side when visible.",
+        "In an east-facing render it should not be visible under the Forward Hemisphere Rule.",
+        "In a 360 panorama or exterior overview, it may be visible."
+      ],
+      "station": "Garden — Buddha Statue Station"
+    },
+    "Small Library": {
+      "purpose": "Final preparatory room before entering Great Hall.",
+      "connections": "Entry Hall -> Small Library -> Foundational Door -> Great Hall.",
+      "requiredFeatures": [
+        "Instruction Manual and Guest Book",
+        "Codex as reference source",
+        "introductory collections",
+        "maps",
+        "symbol references",
+        "historical records",
+        "reading tables",
+        "lecterns",
+        "shelves",
+        "reference books",
+        "writing tools",
+        "map tables",
+        "lamps or lanterns"
+      ],
+      "station": "Small Library — Instruction Manual Station"
+    },
+    "Great Hall": {
+      "purpose": "Central navigation chamber and symbolic heart of exploration.",
+      "requiredFeatures": [
+        "Palace Sigil",
+        "Great Knowledge Compass",
+        "domain medallions",
+        "door tracks",
+        "ancient stonework",
+        "brass mechanisms",
+        "banners where appropriate"
+      ],
+      "viewerPosition": "True geometric center upon the Great Knowledge Compass.",
+      "standardRenderDoorVisibility": "Only forward half visible; minimum 1, preferred 2-3, maximum 4 visible doors. Showing all eight doors is non-canonical unless 360 panorama or special reference asset is requested."
+    },
+    "Hall of Discovery": {
+      "role": "Science Antechamber",
+      "connections": "South Science Door -> Great Hall; North Astronomy Door; West Biology Door; East Logic Door.",
+      "requiredFeatures": [
+        "Map of Understanding",
+        "Compass Rose of Discovery",
+        "Celestial Vault",
+        "Eight Alcoves of Discovery",
+        "integrated handcrafted scientific symbolism"
+      ],
+      "northFacingSpec": "Astronomy Door centered ahead; Biology may appear on left wall; Logic may appear on right wall; Science Door behind viewer unless wide/360.",
+      "doorDetails": {
+        "Astronomy Door": "Celestial motifs, brass star maps, constellations, astrolabe details; open view reveals astronomical instruments and star-study themes.",
+        "Biology Door": "Botanical and life-study motifs; open view reveals botanical study tables, natural-study collections, biological illustrations, specimens, greenery.",
+        "Logic Door": "Geometric and symbolic patterns; open view reveals analytical workspaces, structured diagrams, symbolic boards, calm ordered study environment.",
+        "Science Door": "Return to Great Hall; open view reveals Great Knowledge Compass, ancient stone architecture, brass mechanisms, banners, domain medallions."
+      }
+    }
+  }
+}

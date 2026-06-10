@@ -1,32 +1,36 @@
 {
   "area": "citadel",
   "projectName": "The Great Citadel",
-  "version": "v1",
-  "folderName": "citadel-v1",
+  "packageVersion": "citadel-v1",
+  "sourceCodexVersion": "v3.2",
   "status": "active",
-  "previousVersion": null,
-  "nextVersion": null,
   "created": "2026-06-10",
-  "currentModel": "Personal knowledge palace organized into rooms and stations representing real-world information, media, projects, people, and memory systems.",
-  "sourceRepoTarget": "Errorline10/ChatGPT-Data",
+  "sourceOfTruth": {
+    "repository": "Errorline10/ChatGPT-Data",
+    "path": "citadel/citadel-recovery",
+    "version": "v3.2"
+  },
   "requiredFiles": [
     "citadel-v1-bootstrap.md",
     "citadel-v1-manifest.json",
     "codex/citadel-v1-codex-core.json",
     "rooms/citadel-v1-room-index.json",
+    "rooms/citadel-v1-room-render-definitions.json",
     "maps/citadel-v1-map-core.json",
-    "renders/citadel-v1-render-core.json"
+    "renders/citadel-v1-render-core.json",
+    "renders/citadel-v1-render-continuity-rules.json",
+    "references/citadel-v1-image-reference-index.json",
+    "exterior/citadel-v1-exterior-index.json"
   ],
-  "protocols": {
-    "githubConnectorAvoidance": "Use manual file generation and GitHub Desktop / VS Code instead of relying on the slow GitHub connector.",
-    "publishedSaveRule": "Do not overwrite published GitHub history. Save into the next version folder.",
-    "highestVersionLoadRule": "When loading from GitHub folders, identify and use the highest numbered version folder.",
-    "targetedFileRule": "Individual files may be regenerated when their area/version/purpose is clear from the filename."
-  },
-  "requiredAreas": [
-    "codex",
-    "rooms",
-    "maps",
-    "renders"
+  "loadOrder": [
+    "citadel-v1-bootstrap.md",
+    "codex/citadel-v1-codex-core.json",
+    "rooms/citadel-v1-room-index.json",
+    "rooms/citadel-v1-room-render-definitions.json",
+    "maps/citadel-v1-map-core.json",
+    "renders/citadel-v1-render-core.json",
+    "renders/citadel-v1-render-continuity-rules.json",
+    "references/citadel-v1-image-reference-index.json",
+    "exterior/citadel-v1-exterior-index.json"
   ]
 }

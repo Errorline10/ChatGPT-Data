@@ -1,17 +1,59 @@
 {
   "mapName": "Citadel Map Core",
-  "version": "v1",
+  "packageVersion": "citadel-v1",
+  "sourceCodexVersion": "v3.2",
   "created": "2026-06-10",
-  "description": "Starter map metadata for organizing Citadel rooms by wing.",
-  "wings": [
-    "Information Wing",
-    "Personal Knowledge Wing",
-    "Media Wing",
-    "Technical Wing",
-    "Collection Wing"
+  "coordinateSystem": {
+    "north": "top",
+    "east": "right",
+    "south": "bottom",
+    "west": "left",
+    "rule": "This orientation never rotates. The viewer may rotate. The Citadel does not."
+  },
+  "scope": "All maps, room diagrams, navigation charts, architectural layouts, room connections, exterior views, exterior blueprints, rendering audits, room blueprints, 360 references, and door renders derive from this coordinate system.",
+  "panoramaNote": "360 compass layout is governed by Render Continuity Rules.",
+  "primarySpine": [
+    "Outside",
+    "Entry Hall",
+    "Small Library",
+    "Foundational Door",
+    "Great Hall",
+    "Hall of Discovery"
   ],
-  "notes": [
-    "Map layout is intentionally provisional.",
-    "Future versions can add coordinates, adjacency, floor numbers, and navigation links."
+  "gardenPlacement": "Garden is west of Entry Hall and directly attached to west side of Entry Hall.",
+  "directAdjacencyMappingRule": "Garden must be directly adjacent to west side of Entry Hall on all maps and blueprints; gap, corridor, or bridge is non-canonical.",
+  "topologySeparationRule": [
+    "Canonical adjacency and non-adjacency are both mandatory.",
+    "Garden and Media Antechamber must not connect.",
+    "Garden and Great Hall must not connect.",
+    "Garden and all antechambers must not connect."
+  ],
+  "canonicalDoorCountMappingRule": [
+    "Maps, blueprints, diagrams, room renders, exterior renders, 360 panoramas, door renders, and reference images must preserve canonical door counts.",
+    "Do not add non-canonical doors, corridors, arches, passages, stair exits, balcony exits, tunnels, hidden openings, or implied navigable connections."
+  ],
+  "greatHallRadialGeometry": {
+    "0": "Science Door",
+    "45": "Philosophy Door",
+    "90": "Arts Door",
+    "135": "Personal Door",
+    "180": "Foundational Door",
+    "225": "Inventor's Door",
+    "270": "Media Door",
+    "315": "History Door"
+  },
+  "hallOfDiscoveryCompassGeometry": {
+    "0/North": "Astronomy Door",
+    "90/East": "Logic Door",
+    "180/South": "Science Door to Great Hall",
+    "270/West": "Biology Door"
+  },
+  "canonicalMapRenderBlock": "Render a canonical architectural map of The Great Citadel. North top, south bottom, east right, west left. Physical room topology, not artistic composition. 1:1 square format.",
+  "exteriorMapAlignmentRule": [
+    "Exterior maps and blueprints align to fixed compass orientation.",
+    "Entry Hall exterior mass represents southern known interior room.",
+    "Garden appears directly west of Entry Hall exterior mass.",
+    "Bridge extends southwest from Entry Hall exterior mass and terminates at landing platform southwest of entire Citadel.",
+    "Exterior depictions do not override interior topology."
   ]
 }

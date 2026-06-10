@@ -1,0 +1,85 @@
+{
+  "name": "Citadel Exterior Index",
+  "packageVersion": "citadel-v1",
+  "sourceCodexVersion": "v3.2",
+  "created": "2026-06-10",
+  "exteriorLayerRule": [
+    "Exterior Layer supplements Canon Core, Room Index, Room Render Definitions, Map Core, Render Core, Render Continuity Rules, and Image Reference Index.",
+    "Exterior views are room-like canonical locations but do not override interior topology.",
+    "Exterior architecture must map to active interior topology wherever a direct relationship exists.",
+    "All exterior renders follow the same pre-render approval and post-render audit rules as interior renders."
+  ],
+  "outsideOfCitadel": {
+    "type": "Exterior Overview",
+    "classification": "Exterior Canonical Location",
+    "purpose": "Canonical exterior representation of the Great Citadel complex as a single physical structure viewed from outside.",
+    "defaultRender": {
+      "aspectRatio": "16:9",
+      "viewpoint": "elevated aerial view, above the Citadel, looking northwest",
+      "scale": "medium-sized Citadel",
+      "location": "rocky mountain peak",
+      "background": "distant mountain ranges",
+      "sky": "a few steampunk blimps"
+    }
+  },
+  "exteriorStructuralCanon": [
+    "Building aligned north-to-south.",
+    "One large main dome located on north side.",
+    "Eight smaller domes evenly spaced and directly integrated with main dome structure.",
+    "Each of the eight smaller domes has four attached smaller rooms.",
+    "One south room attached to the main dome structure.",
+    "South room represents Entry Hall exterior mass.",
+    "Bridge connects to Entry Hall exterior mass and extends southwest.",
+    "Bridge terminates at landing platform southwest of entire Citadel.",
+    "Garden is attached directly to west side of Entry Hall exterior mass."
+  ],
+  "structuralAttachmentRule": [
+    "All exterior structures are integrated into one continuous complex.",
+    "No detached buildings, separated structures, free-standing annexes, visible gaps, connecting hallways, skybridges, or connector tunnels.",
+    "Every dome, room mass, and architectural component directly touches adjacent structure.",
+    "Citadel reads as one unified building, not many buildings connected by hallways."
+  ],
+  "exteriorGardenCanon": [
+    "Exterior Garden must match Garden room canon.",
+    "Required: Zen garden, raked sand, rock garden elements, stacked smooth rocks, one small Buddha statue.",
+    "Buddha location: northwest corner.",
+    "Garden remains west of Entry Hall."
+  ],
+  "bridgeAndPlatformRules": [
+    "Bridge must be fully visible in exterior overview renders.",
+    "Near bridge attachment, entire bridge span, and far bridge terminus must be visible.",
+    "Bridge may not disappear into fog, terrain, clouds, or off-frame.",
+    "Landing platform is southwest of Citadel, not south/southeast/east/north/floating.",
+    "At far southwest end there is one small stone-and-brass landing platform for steampunk blimp arrival and departure.",
+    "Landing platform is not city-sized, not a large airport, and not larger than Entry Hall exterior mass."
+  ],
+  "airshipTrafficRule": "A few distant blimps only; no large fleets, crowded skies, military formations, or commercial traffic corridors.",
+  "exteriorStations": [
+    "Aerial Overview Station: above the Citadel, looking northwest.",
+    "Bridge Arrival Station: viewer on southwest bridge, looking toward Citadel.",
+    "Mountain Peak Station: viewer below Citadel, looking upward.",
+    "Garden Exterior Station: exterior view focused on Garden west of Entry Hall exterior mass.",
+    "North Dome Station: viewer above northern dome complex."
+  ],
+  "exteriorComplianceChecklist": [
+    "rocky mountain peak",
+    "distant mountains",
+    "few steampunk blimps",
+    "main dome north",
+    "eight directly integrated smaller domes",
+    "south Entry Hall exterior mass",
+    "Garden west of Entry Hall exterior mass",
+    "Zen garden features",
+    "Buddha in northwest Garden corner",
+    "north-south building alignment",
+    "unified structure",
+    "no visible hallways",
+    "direct structural attachment",
+    "entire bridge visible",
+    "near bridge anchor visible",
+    "far bridge anchor visible",
+    "bridge extending southwest",
+    "landing platform at southwest terminus",
+    "one small airship landing platform"
+  ]
+}

@@ -6,16 +6,16 @@
   "fields": {
     "id": "Stable unique person id.",
     "displayName": "Preferred display name.",
-    "knownNames": "Alternate names, nicknames, or memory anchors.",
+    "knownNames": "Alternate names/nicknames.",
     "relationship": "How this person is known.",
-    "contexts": "Places, projects, groups, or situations where this person appears.",
+    "contexts": "Places/projects/groups.",
     "roles": "Known roles or titles.",
-    "faceMemoryNotes": "Visual/person-recognition notes. Avoid creepy or overly sensitive details.",
+    "faceMemoryNotes": "Visual/person-recognition notes.",
     "conversationNotes": "Useful remembered interaction notes.",
-    "imageRefs": "Relative paths to images in people-index/people-index-v1/images.",
+    "imageRefs": "Relative image paths.",
     "relatedPeople": "Other person ids.",
-    "relatedCitadelEntries": "Citadel room or codex ids connected to this person.",
-    "privacyLevel": "public, personal, sensitive, or private.",
+    "relatedCitadelEntries": "Related Citadel ids.",
+    "privacyLevel": "public/personal/sensitive/private.",
     "lastUpdated": "YYYY-MM-DD."
   }
 }

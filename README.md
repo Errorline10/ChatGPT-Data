@@ -1,26 +1,33 @@
-# ChatGPT Data Dump v1
+# ChatGPT Data Dump v1 — Citadel v3.2 Grounded
 
-This package uses self-describing version folders and self-identifying filenames.
-
-## Pattern
+This package keeps the self-describing folder format:
 
 ```text
-/area/area-vN/area-vN-file-name.ext
+/citadel/citadel-v1/...
+/people-index/people-index-v1/...
+/test/test-v1/...
 ```
 
-## Examples
+Correction:
+
+The Citadel files are now rebuilt from the original recovery source using **Codex v3.2**, not v2.8.
+
+Source folder:
 
 ```text
-/citadel/citadel-v1/citadel-v1-manifest.json
-/citadel/citadel-v1/rooms/citadel-v1-room-index.json
-/citadel/citadel-v1/codex/citadel-v1-codex-core.json
-/people-index/people-index-v1/people-index-v1.json
-/people-index/people-index-v1/people-index-v1-schema.json
+/citadel/citadel-recovery/
 ```
 
-## Rules
+Required v3.2 source set represented:
 
-1. Do not overwrite old published version folders.
-2. Create a new `area-vN` folder for each published version.
-3. Use the highest numbered version folder unless a specific version is requested.
-4. Targeted file generation is allowed when the requested file path is clear.
+```text
+sessionRules/Codex_v3.2_Bootstrap.md
+codexVault/Codex_v3.2_Canon_Core.md
+roomVault/Codex_v3.2_Room_Index.md
+roomVault/Codex_v3.2_Room_Render_Definitions.md
+mapVault/Codex_v3.2_Map_Core.md
+renderVault/Codex_v3.2_Render_Core.md
+renderVault/Codex_v3.2_Render_Continuity_Rules.md
+referenceVault/Codex_v3.2_Image_Reference_Index.md
+exteriorVault/Codex_v3.2_Exterior_Index.md
+```

@@ -1,0 +1,138 @@
+{
+  "name": "Citadel Image Reference Index",
+  "packageVersion": "citadel-v1",
+  "sourceCodexVersion": "v3.2",
+  "created": "2026-06-10",
+  "indexStatus": {
+    "rule": "Reference images are canonical as actual visual inputs only when approved canonical and successfully retrieved or available in active context.",
+    "metadataRule": "Reference entries may be used as descriptive continuity metadata without requiring image loading unless actual reference images are explicitly requested."
+  },
+  "statusValues": [
+    "approved canonical",
+    "candidate",
+    "missing",
+    "rejected",
+    "superseded"
+  ],
+  "rootImageFolder": "/chatGPT/referenceVault/images/",
+  "referenceSets": [
+    {
+      "set": "Outside Citadel v1",
+      "location": "Outside of the Citadel",
+      "slug": "outsideCitadel",
+      "assets": [
+        {
+          "asset_id": "outsideCitadel_aerialNW_v1",
+          "path": "/chatGPT/referenceVault/images/outsideCitadel/outsideCitadel_aerialNW_v1.png",
+          "status": "approved canonical",
+          "purpose": "Primary exterior aerial northwest reference."
+        },
+        {
+          "asset_id": "outsideCitadel_blueprint_v1",
+          "path": "/chatGPT/referenceVault/images/outsideCitadel/outsideCitadel_blueprint_v1.png",
+          "status": "missing",
+          "purpose": "Preserve exterior compass geometry and structure."
+        }
+      ]
+    },
+    {
+      "set": "Garden v1",
+      "room": "Garden",
+      "slug": "garden",
+      "assets": [
+        {
+          "asset_id": "garden_360_v1",
+          "path": "/chatGPT/referenceVault/images/garden/garden_360_v1.png",
+          "status": "candidate",
+          "purpose": "Primary visual memory for Garden."
+        },
+        {
+          "asset_id": "garden_blueprint_v1",
+          "path": "/chatGPT/referenceVault/images/garden/garden_blueprint_v1.png",
+          "status": "missing",
+          "purpose": "Preserve Garden geometry and features."
+        },
+        {
+          "asset_id": "door_entryHall_west_from_garden_v1",
+          "path": "/chatGPT/referenceVault/images/doors/garden_entryHall/door_entryHall_west_from_garden_v1.png",
+          "status": "missing",
+          "purpose": "Show Entry Hall through Garden East Door."
+        },
+        {
+          "asset_id": "door_garden_east_from_entryHall_v1",
+          "path": "/chatGPT/referenceVault/images/doors/garden_entryHall/door_garden_east_from_entryHall_v1.png",
+          "status": "missing",
+          "purpose": "Show Garden through Entry Hall West Door."
+        }
+      ]
+    },
+    {
+      "set": "Entry Hall v1",
+      "room": "Entry Hall",
+      "slug": "entryHall",
+      "assets": [
+        {
+          "asset_id": "entryHall_360_v1",
+          "path": "/chatGPT/referenceVault/images/entryHall/entryHall_360_v1.png",
+          "status": "missing",
+          "purpose": "Primary visual memory for Entry Hall."
+        },
+        {
+          "asset_id": "entryHall_blueprint_v1",
+          "path": "/chatGPT/referenceVault/images/entryHall/entryHall_blueprint_v1.png",
+          "status": "missing",
+          "purpose": "Preserve Entry Hall geometry and major features."
+        }
+      ]
+    },
+    {
+      "set": "Hall of Discovery v1",
+      "room": "Hall of Discovery",
+      "slug": "hallOfDiscovery",
+      "assets": [
+        {
+          "asset_id": "hallOfDiscovery_360_v1",
+          "path": "/chatGPT/referenceVault/images/hallOfDiscovery/hallOfDiscovery_360_v1.png",
+          "status": "candidate",
+          "purpose": "Primary visual memory for Hall of Discovery 360 review."
+        },
+        {
+          "asset_id": "hallOfDiscovery_blueprint_v1",
+          "path": "/chatGPT/referenceVault/images/hallOfDiscovery/hallOfDiscovery_blueprint_v1.png",
+          "status": "missing",
+          "purpose": "Preserve Hall of Discovery compass geometry."
+        },
+        {
+          "asset_id": "door_astronomy_north_from_hallOfDiscovery_v1",
+          "path": "/chatGPT/referenceVault/images/doors/hallOfDiscovery_astronomy/door_astronomy_north_from_hallOfDiscovery_v1.png",
+          "status": "missing",
+          "purpose": "Show Astronomy through North Door."
+        },
+        {
+          "asset_id": "door_biology_west_from_hallOfDiscovery_v1",
+          "path": "/chatGPT/referenceVault/images/doors/hallOfDiscovery_biology/door_biology_west_from_hallOfDiscovery_v1.png",
+          "status": "missing",
+          "purpose": "Show Biology through West Door."
+        },
+        {
+          "asset_id": "door_logic_east_from_hallOfDiscovery_v1",
+          "path": "/chatGPT/referenceVault/images/doors/hallOfDiscovery_logic/door_logic_east_from_hallOfDiscovery_v1.png",
+          "status": "missing",
+          "purpose": "Show Logic through East Door."
+        },
+        {
+          "asset_id": "door_greatHall_south_from_hallOfDiscovery_v1",
+          "path": "/chatGPT/referenceVault/images/doors/hallOfDiscovery_greatHall/door_greatHall_south_from_hallOfDiscovery_v1.png",
+          "status": "missing",
+          "purpose": "Show Great Hall through South Science Door."
+        }
+      ]
+    }
+  ],
+  "retrievalRule": [
+    "Before using any reference image as actual visual input, verify exact path can be fetched or that image is uploaded/attached.",
+    "Do not claim missing or candidate reference image has been loaded.",
+    "Do not treat missing or candidate references as approved visual inputs.",
+    "If actual image input is not required, reference entries may be used as descriptive metadata only."
+  ]
+}

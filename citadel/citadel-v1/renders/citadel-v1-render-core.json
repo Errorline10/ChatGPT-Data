@@ -1,16 +1,96 @@
 {
   "renderName": "Citadel Render Core",
-  "version": "v1",
+  "packageVersion": "citadel-v1",
+  "sourceCodexVersion": "v3.2",
   "created": "2026-06-10",
-  "knownVisualDirection": {
-    "outsideCitadel": "Medium-sized domed steampunk-fantasy Citadel on a rocky mountain peak above clouds.",
-    "composition": "16:9 elevated aerial oblique view from above looking northwest.",
-    "bridgeRule": "Bridge extends southwest.",
-    "style": "Steampunk fantasy, architectural, atmospheric, navigable."
+  "generalRenderBlock": {
+    "standardRoomRenders": "16:9",
+    "mapRenders": "1:1",
+    "exteriorOverviewRenders": "16:9 unless otherwise specified",
+    "equirectangular360": "2:1 and must follow Render Continuity Rules"
   },
-  "renderChecklist": [
-    "Respect established compass and viewpoint rules when applicable.",
-    "Make rooms readable as real-world functional spaces.",
-    "Prefer practical symbolic details over random decoration."
-  ]
+  "renderingRules": [
+    "Viewer faces requested compass direction; if none requested, canonical North.",
+    "Default viewer position is true geometric center of room or defined station location.",
+    "Room or exterior structure does not rotate.",
+    "Directly attached spaces remain directly attached.",
+    "Non-adjacent spaces remain non-adjacent.",
+    "Do not invent contact between spaces not connected by Codex.",
+    "Visual references may guide continuity but may not override topology, compass bearings, door count, door placement, exterior structural rules, direct adjacency, non-adjacency, or 360 compass normalization."
+  ],
+  "citadelRenderRequestInterceptRule": [
+    "Any request that would generate a Citadel image must be intercepted before generation.",
+    "Determine render type, load rules, compile prompt, display prompt, display checklist, ask approval, wait for explicit approval.",
+    "Only after approval may image generation occur.",
+    "After generation, run compliance audit, produce percentage, findings, corrections, and recommended GitHub save path."
+  ],
+  "requiredWorkflowSequence": [
+    "Compile Codex-grounded prompt",
+    "Display compiled prompt",
+    "Display relevant pre-render checklist",
+    "Ask: Is this the correct prompt?",
+    "Wait for user approval",
+    "Generate image only after approval",
+    "Perform post-render compliance audit",
+    "Report compliance percentage",
+    "List findings and corrections",
+    "Print recommended GitHub save path when applicable"
+  ],
+  "preRenderChecklistFields": [
+    "render type",
+    "source room/location",
+    "viewer position",
+    "viewer facing direction",
+    "aspect ratio",
+    "canonical door count",
+    "visible canonical doors",
+    "connected-room derivations",
+    "topology constraints",
+    "no-overlay/no-text requirements",
+    "post-render audit requirement"
+  ],
+  "renderStack": {
+    "maps": [
+      "Map Core"
+    ],
+    "standardRoomRenders": [
+      "Room Index",
+      "Room Render Definitions",
+      "Render Core",
+      "Render Continuity Rules",
+      "Image Reference Index when available"
+    ],
+    "exteriorRenders": [
+      "Exterior Index",
+      "Map Core",
+      "Render Core",
+      "Render Continuity Rules",
+      "Image Reference Index when available"
+    ],
+    "panoramas360": [
+      "Render Continuity Rules",
+      "all pre-render and post-render workflow rules"
+    ]
+  },
+  "postRenderComplianceAuditRule": {
+    "required": true,
+    "compareAgainst": [
+      "Canon Core",
+      "Room Index",
+      "Room Render Definitions",
+      "Map Core",
+      "Render Core",
+      "Render Continuity Rules",
+      "Exterior Index when applicable"
+    ],
+    "scoreScale": {
+      "100": "Fully compliant",
+      "90-99": "Minor visual deviations only",
+      "75-89": "Moderate deviations requiring correction",
+      "below75": "Significant canonical violations"
+    }
+  },
+  "exteriorRenderAuditRule": "Fails if rocky mountain, distant mountains, medium scale, main north dome, eight smaller domes, unified structure, south Entry Hall mass, Garden west of Entry Hall, southwest bridge, or southwest landing platform rules are violated.",
+  "panorama360AuditRule": "Fails if topology changes, compass bearings are wrong, non-canonical exits appear, door count is violated, overlays/text appear, or compass normalization fails.",
+  "doorRenderAuditRule": "Fails if wrong destination room, intermediate corridor invented, extra doors/passages invented, destination-room canon contradicted, or direct doorway continuity weakened."
 }

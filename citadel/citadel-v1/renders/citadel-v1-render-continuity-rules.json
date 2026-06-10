@@ -1,0 +1,55 @@
+{
+  "name": "Citadel Render Continuity Rules",
+  "packageVersion": "citadel-v1",
+  "sourceCodexVersion": "v3.2",
+  "created": "2026-06-10",
+  "purpose": "Visual reference assets and descriptive continuity metadata improve continuity, but topology, compass bearings, room definitions, exterior definitions, door locations, door count, direct adjacency, and non-adjacency always take precedence.",
+  "panorama360CompassNormalizationRule": {
+    "horizontalCenter": "North",
+    "rightQuarter": "East",
+    "leftQuarter": "West",
+    "farLeftAndFarRightEdges": "South seam",
+    "capturePoint": "true geometric center unless user explicitly requests otherwise",
+    "noOverlayRule": "Compass normalization must be achieved through composition, not visible compass labels, arrows, UI overlays, or explanatory text.",
+    "garden360": "Entry Hall doorway on east wall should appear around right-quarter position; northwest Buddha between left-quarter West and center North.",
+    "hallOfDiscovery360": "Astronomy center North, Logic right-quarter East, Biology left-quarter West, Science Door to Great Hall at far-left/far-right South seam."
+  },
+  "referenceAssetTypes": [
+    "360 Room Reference",
+    "Room Blueprint Reference",
+    "Exterior Reference",
+    "Door Render Reference"
+  ],
+  "referenceImageFolderStructure": {
+    "root": "/chatGPT/referenceVault/images/",
+    "roomPattern": "/chatGPT/referenceVault/images/{roomSlug}/{roomSlug}_360_v1.png",
+    "outsideCitadelPattern": "/chatGPT/referenceVault/images/outsideCitadel/outsideCitadel_aerialNW_v1.png",
+    "doorPattern": "/chatGPT/referenceVault/images/doors/{sourceRoomSlug}_{destinationRoomSlug}/door_{destinationRoomSlug}_{destinationDoorSlug}_from_{sourceRoomSlug}_v1.png"
+  },
+  "referenceResolutionOrder": {
+    "roomRenders": [
+      "Door Render Reference metadata",
+      "360 Room Reference metadata",
+      "Room Blueprint Reference metadata",
+      "Room Render Definitions",
+      "Room Index",
+      "Map Core",
+      "General Canon"
+    ],
+    "exteriorRenders": [
+      "approved exterior reference metadata",
+      "exterior blueprint metadata",
+      "Exterior Index",
+      "Map Core exterior alignment",
+      "Render Core exterior audit rules",
+      "General Canon"
+    ]
+  },
+  "workflowRules": {
+    "panorama360": "Compile prompt, checklist, approval, generation, audit, compliance score, findings, corrections, save path.",
+    "exteriorReference": "Use Exterior Index as controlling source; preserve structural rules, southwest bridge and landing platform, Garden west of Entry Hall exterior mass, unified no-hallway structure.",
+    "doorRender": "Identify source room, source door, destination room, destination door, compass wall, and preserve immediate doorway continuity."
+  },
+  "promotionRule": "Generated images are not canonical merely because generated. Promotion requires audit, user approval, save to correct GitHub path, and Image Reference Index record.",
+  "conflictHandling": "Textual Codex topology, exterior rules, door-count rules, and compass normalization rules win over visual references."
+}

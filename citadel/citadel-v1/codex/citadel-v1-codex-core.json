@@ -1,22 +1,71 @@
 {
   "codexName": "Great Citadel Codex Core",
-  "version": "v1",
+  "packageVersion": "citadel-v1",
+  "sourceCodexVersion": "v3.2",
   "created": "2026-06-10",
-  "definition": "The Citadel is a navigable symbolic interface for organizing real-world knowledge, personal memory, media collections, technical projects, and life systems.",
-  "coreRules": [
-    "Rooms should represent real-world things, tools, collections, habits, or information systems.",
-    "Favor discoverability over abstract lore.",
-    "A room can be imaginative in appearance, but its purpose should map to something useful.",
-    "Citadel data should be saved in clean, readable JSON or Markdown.",
-    "Published GitHub files should use version folders rather than overwriting prior versions.",
-    "Targeted file generation is supported when the requested file is clearly named."
-  ],
-  "activeConcepts": [
-    "personal knowledge palace",
-    "rooms and stations",
-    "People Index / Embassy Archive",
-    "manual GitHub sync",
-    "highest version loading",
-    "targeted file regeneration"
-  ]
+  "globalCanon": {
+    "worldName": "The Great Citadel",
+    "description": "A vast medieval world of knowledge, memory, media, discovery, and reflection.",
+    "explorationModes": [
+      "rooms",
+      "halls",
+      "gardens",
+      "doors",
+      "maps",
+      "alcoves",
+      "symbols",
+      "stations",
+      "images",
+      "panoramas",
+      "blueprints",
+      "exterior views",
+      "realms"
+    ],
+    "feel": [
+      "ancient",
+      "lived-in",
+      "warm",
+      "human-scaled",
+      "coherent",
+      "cared for",
+      "practical",
+      "discoverable"
+    ],
+    "standardRenderingRule": "Standard renderings place the visitor inside the world unless the request is explicitly for a map, diagram, exterior overview, blueprint, 360 panorama, or special reference view."
+  },
+  "currentCanonSummary": {
+    "foundationPath": [
+      "Entry Hall",
+      "Small Library",
+      "Foundational Door",
+      "Great Hall"
+    ],
+    "gardenBranch": [
+      "Entry Hall West Door",
+      "Garden East Door",
+      "Garden"
+    ],
+    "gardenRules": [
+      "Garden is directly attached to the west side of Entry Hall.",
+      "Entry Hall West Door and Garden East Door are the same immediate doorway connection.",
+      "Garden connects only to Entry Hall.",
+      "Garden has no canonical link to Media Antechamber, Great Hall, or any antechamber."
+    ],
+    "greatHall": "Central navigation chamber with eight compass-fixed openings.",
+    "hallOfDiscovery": "Science Antechamber; connects south to Great Hall, north to Astronomy, west to Biology, and east to Logic."
+  },
+  "exteriorCanonSummary": {
+    "outsideOfCitadel": "Canonical exterior location representing the full Citadel complex viewed from outside.",
+    "exteriorDoesNotOverrideInteriorTopology": true,
+    "structure": "Unified medium-sized domed structure atop a rocky mountain peak, with a bridge extending southwest to a small airship landing platform."
+  },
+  "canonicalVisualMemory": {
+    "rule": "Approved 360 room references, room blueprints, exterior references, and door renders may serve as visual continuity sources, but do not override topology, room definitions, compass bearings, direct adjacency rules, or non-adjacency rules.",
+    "imageReferenceRule": "A reference image is canonical as an actual visual input only when listed as approved in the Image Reference Index and successfully retrieved when needed.",
+    "fallbackRule": "If a reference image cannot be fetched, do not claim it was loaded. Rendering may proceed from textual Codex rules unless actual image input was explicitly requested."
+  },
+  "canonicalStatus": {
+    "canonicalWorldName": "The Great Citadel",
+    "activeRelease": "Codex v3.2"
+  }
 }
