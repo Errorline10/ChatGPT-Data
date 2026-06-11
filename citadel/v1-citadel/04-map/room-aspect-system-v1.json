@@ -1,0 +1,13 @@
+{
+  "system": "room-aspect-system",
+  "version": "v1",
+  "definition": "A room may contain multiple aspects. Each aspect changes the room's presentation and interactions while preserving the room identity.",
+  "rules": [
+    "A room remains the parent container.",
+    "An aspect changes appearance, available stations, objects, and interactions.",
+    "Aspects should be activated through in-world mechanisms.",
+    "Aspects are suitable for collections, modes, and specialized knowledge experiences.",
+    "The system should reduce clutter by avoiding unnecessary separate rooms."
+  ],
+  "exampleRoom": "visual-spatial-room"
+}

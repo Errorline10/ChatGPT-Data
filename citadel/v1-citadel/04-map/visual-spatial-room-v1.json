@@ -1,0 +1,45 @@
+{
+  "id": "visual-spatial-room",
+  "name": "Visual / Spatial Room",
+  "type": "knowledge",
+  "parentDoor": "grand-hall-east-door",
+  "purpose": "A major intelligence room for visual, spatial, cinematic, artistic, and map-based knowledge.",
+  "aspectSystem": {
+    "enabled": true,
+    "defaultAspect": "visual-studio",
+    "activationConcept": "The user activates an in-world mechanism to magically transform the room into a selected aspect."
+  },
+  "aspects": [
+    {
+      "id": "visual-studio",
+      "name": "Visual Studio",
+      "status": "default",
+      "description": "The default learning space for visual and spatial knowledge."
+    },
+    {
+      "id": "dvd-library",
+      "name": "DVD Library",
+      "status": "reserved",
+      "description": "A transformed aspect of the Visual / Spatial Room focused on DVD and visual media collections.",
+      "futureRole": "A room-aspect instance that presents the user's DVD collection as a navigable knowledge library."
+    },
+    {
+      "id": "art-gallery",
+      "name": "Art Gallery",
+      "status": "future",
+      "description": "A future aspect for images, art, and visual references."
+    },
+    {
+      "id": "map-studio",
+      "name": "Map Studio",
+      "status": "future",
+      "description": "A future aspect for maps, spatial layouts, and navigation visuals."
+    },
+    {
+      "id": "cinema",
+      "name": "Cinema",
+      "status": "future",
+      "description": "A future aspect for cinematic viewing and media presentation."
+    }
+  ]
+}
