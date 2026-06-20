@@ -1,0 +1,1 @@
+Left Alcove=Knowledge Vault. Center=Room Identity. Right Alcove=Active Specialization.

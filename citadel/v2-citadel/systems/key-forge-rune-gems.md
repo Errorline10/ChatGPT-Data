@@ -1,0 +1,1 @@
+8 Gem Shapes x 12 Gem Colors = 96 Rune Gems. Used to encode password characters and forge physical keys.

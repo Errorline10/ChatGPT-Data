@@ -1,0 +1,1 @@
+Central hub with room doorways, monumental architecture, knowledge theme.

@@ -1,0 +1,380 @@
+{
+  "version": "v4-citadel",
+  "model_rule": "JSON is authoritative; Markdown explains the JSON; the application renders the JSON.",
+  "folder_structure": [
+    "01-concept",
+    "02-prompt-vault",
+    "03-application",
+    "04-map"
+  ],
+  "compass_system": {
+    "direction_set": [
+      "N",
+      "NE",
+      "E",
+      "SE",
+      "S",
+      "SW",
+      "W",
+      "NW"
+    ],
+    "primary_axis": "Entry sequence and room renders should define compass orientation explicitly.",
+    "render_rule": "Interior render prompts should specify camera position and facing direction.",
+    "great_hall_rule": "Great Hall uses 8 compass doors and 16 niches around a circular wall.",
+    "local_vs_global_note": "v4 uses a working global compass map where possible. Any assignment marked working_assignment may be updated when original source files are loaded."
+  },
+  "rooms": {
+    "citadel-exterior": {
+      "name": "Citadel Exterior",
+      "type": "exterior_establishing_location",
+      "status": "working",
+      "purpose": "First impression of the Citadel as a mountain-top place of knowledge, discovery, memory, and personal world-building.",
+      "mood": [
+        "epic",
+        "mysterious",
+        "safe",
+        "intelligent",
+        "slightly magical"
+      ],
+      "doors": {
+        "N": {
+          "name": "Main Citadel Entrance",
+          "connects_to": "entry-hall",
+          "status": "known",
+          "notes": "Primary entrance into the Entry Hall."
+        },
+        "S": {
+          "name": "Stone Bridge / Approach Path",
+          "connects_to": "outside-approach",
+          "status": "known",
+          "notes": "Not a room door; this is the approach direction."
+        }
+      }
+    },
+    "entry-hall": {
+      "name": "Entry Hall",
+      "type": "threshold_room",
+      "status": "working",
+      "purpose": "First interior room after entering the Citadel. It transitions the visitor from the outside world into the deeper knowledge spaces.",
+      "mood": [
+        "welcoming",
+        "ordered",
+        "ceremonial",
+        "calm"
+      ],
+      "canonical_details": {
+        "door_count": 4
+      },
+      "doors": {
+        "N": {
+          "name": "North Door / Unassigned Passage",
+          "connects_to": "future-room-or-passage",
+          "status": "reserved",
+          "notes": "Reserved because only the four-door count is known; exact use may be updated from source files."
+        },
+        "E": {
+          "name": "East Door to Great Hall",
+          "connects_to": "great-hall",
+          "status": "working_assignment",
+          "notes": "Assigned in v4 so the Great Hall can preserve its known South Door to Small Library."
+        },
+        "S": {
+          "name": "South Door to Citadel Exterior",
+          "connects_to": "citadel-exterior",
+          "status": "known",
+          "notes": "Return to the outside/exterior approach."
+        },
+        "W": {
+          "name": "West Door / Unassigned Passage",
+          "connects_to": "future-room-or-passage",
+          "status": "reserved",
+          "notes": "Reserved for future or previously documented room not yet loaded into this chat."
+        }
+      }
+    },
+    "great-hall": {
+      "name": "Great Hall",
+      "type": "central_hub",
+      "status": "working",
+      "purpose": "Main hub of the Citadel, containing the major compass doors and circular wall niches.",
+      "mood": [
+        "grand",
+        "organized",
+        "magical",
+        "intelligent",
+        "expandable"
+      ],
+      "canonical_details": {
+        "layout": "circular",
+        "door_count": 8,
+        "wall_niche_count": 16,
+        "niches_per_door": 2,
+        "floor": "ancient Roman / cathedral-like marble floor with plants; center remains open",
+        "center_sigil": "Buddhist eight-spoked wheel floor sigil"
+      },
+      "doors": {
+        "N": {
+          "name": "North Door / Hall of Discovery Candidate",
+          "connects_to": "hall-of-discovery-candidate",
+          "status": "legacy_candidate",
+          "notes": "Hall of Discovery was mentioned in earlier context, but detailed room documentation is not loaded here."
+        },
+        "NE": {
+          "name": "Northeast Door / Future Room",
+          "connects_to": "future-room-ne",
+          "status": "reserved",
+          "notes": "Reserved for expansion."
+        },
+        "E": {
+          "name": "East Door to Visual Intelligence Room",
+          "connects_to": "visual-intelligence-room",
+          "status": "working_assignment",
+          "notes": "Uses the left/right alcove doorway system."
+        },
+        "SE": {
+          "name": "Southeast Door / Future Room",
+          "connects_to": "future-room-se",
+          "status": "reserved",
+          "notes": "Reserved for expansion."
+        },
+        "S": {
+          "name": "South Door to Small Library",
+          "connects_to": "small-library",
+          "status": "known",
+          "notes": "Binding detail from project context: South door returns to the Small Library."
+        },
+        "SW": {
+          "name": "Southwest Door to Small Bedroom",
+          "connects_to": "small-bedroom",
+          "status": "working_assignment",
+          "notes": "Working placement for the personal quarters."
+        },
+        "W": {
+          "name": "West Door to Entry Hall",
+          "connects_to": "entry-hall",
+          "status": "working_assignment",
+          "notes": "Working placement to keep Great Hall South assigned to Small Library."
+        },
+        "NW": {
+          "name": "Northwest Door / Future Room",
+          "connects_to": "future-room-nw",
+          "status": "reserved",
+          "notes": "Reserved for expansion."
+        }
+      }
+    },
+    "small-library": {
+      "name": "Small Library",
+      "type": "knowledge_room",
+      "status": "working",
+      "purpose": "Intimate personal research and reading room; smaller and warmer than a grand archive.",
+      "mood": [
+        "quiet",
+        "focused",
+        "comfortable",
+        "intelligent"
+      ],
+      "doors": {
+        "N": {
+          "name": "North Door to Great Hall",
+          "connects_to": "great-hall",
+          "status": "known_reciprocal",
+          "notes": "Reciprocal of Great Hall South Door."
+        }
+      }
+    },
+    "small-bedroom": {
+      "name": "Small Bedroom",
+      "type": "private_living_space",
+      "status": "working",
+      "purpose": "Personal quarters that make the Citadel feel livable and human-scale.",
+      "mood": [
+        "safe",
+        "restful",
+        "private",
+        "grounded"
+      ],
+      "doors": {
+        "NE": {
+          "name": "Northeast Door to Great Hall",
+          "connects_to": "great-hall",
+          "status": "working_assignment",
+          "notes": "Reciprocal of Great Hall Southwest Door in the v4 working compass map."
+        }
+      }
+    },
+    "visual-intelligence-room": {
+      "name": "Visual Intelligence Room",
+      "type": "specialized_analysis_room",
+      "status": "working",
+      "purpose": "Room for analyzing visual information: images, documents, faces, maps, architecture, artwork, objects, video, and patterns.",
+      "mood": [
+        "analytical",
+        "luminous",
+        "precise",
+        "magical",
+        "technical"
+      ],
+      "doors": {
+        "W": {
+          "name": "West Door to Great Hall",
+          "connects_to": "great-hall",
+          "status": "working_assignment",
+          "notes": "Reciprocal of Great Hall East Door."
+        }
+      }
+    }
+  },
+  "great_hall_niches": [
+    {
+      "id": "great-hall-niche-n-ccw",
+      "owned_by_door_direction": "N",
+      "side": "counterclockwise/left side of door when facing outward from room center",
+      "status": "available",
+      "suggested_use": "Artifact, statue, station indicator, decorative clue, or future interaction point."
+    },
+    {
+      "id": "great-hall-niche-n-cw",
+      "owned_by_door_direction": "N",
+      "side": "clockwise/right side of door when facing outward from room center",
+      "status": "available",
+      "suggested_use": "Artifact, statue, station indicator, decorative clue, or future interaction point."
+    },
+    {
+      "id": "great-hall-niche-ne-ccw",
+      "owned_by_door_direction": "NE",
+      "side": "counterclockwise/left side of door when facing outward from room center",
+      "status": "available",
+      "suggested_use": "Artifact, statue, station indicator, decorative clue, or future interaction point."
+    },
+    {
+      "id": "great-hall-niche-ne-cw",
+      "owned_by_door_direction": "NE",
+      "side": "clockwise/right side of door when facing outward from room center",
+      "status": "available",
+      "suggested_use": "Artifact, statue, station indicator, decorative clue, or future interaction point."
+    },
+    {
+      "id": "great-hall-niche-e-ccw",
+      "owned_by_door_direction": "E",
+      "side": "counterclockwise/left side of door when facing outward from room center",
+      "status": "available",
+      "suggested_use": "Artifact, statue, station indicator, decorative clue, or future interaction point."
+    },
+    {
+      "id": "great-hall-niche-e-cw",
+      "owned_by_door_direction": "E",
+      "side": "clockwise/right side of door when facing outward from room center",
+      "status": "available",
+      "suggested_use": "Artifact, statue, station indicator, decorative clue, or future interaction point."
+    },
+    {
+      "id": "great-hall-niche-se-ccw",
+      "owned_by_door_direction": "SE",
+      "side": "counterclockwise/left side of door when facing outward from room center",
+      "status": "available",
+      "suggested_use": "Artifact, statue, station indicator, decorative clue, or future interaction point."
+    },
+    {
+      "id": "great-hall-niche-se-cw",
+      "owned_by_door_direction": "SE",
+      "side": "clockwise/right side of door when facing outward from room center",
+      "status": "available",
+      "suggested_use": "Artifact, statue, station indicator, decorative clue, or future interaction point."
+    },
+    {
+      "id": "great-hall-niche-s-ccw",
+      "owned_by_door_direction": "S",
+      "side": "counterclockwise/left side of door when facing outward from room center",
+      "status": "available",
+      "suggested_use": "Artifact, statue, station indicator, decorative clue, or future interaction point."
+    },
+    {
+      "id": "great-hall-niche-s-cw",
+      "owned_by_door_direction": "S",
+      "side": "clockwise/right side of door when facing outward from room center",
+      "status": "available",
+      "suggested_use": "Artifact, statue, station indicator, decorative clue, or future interaction point."
+    },
+    {
+      "id": "great-hall-niche-sw-ccw",
+      "owned_by_door_direction": "SW",
+      "side": "counterclockwise/left side of door when facing outward from room center",
+      "status": "available",
+      "suggested_use": "Artifact, statue, station indicator, decorative clue, or future interaction point."
+    },
+    {
+      "id": "great-hall-niche-sw-cw",
+      "owned_by_door_direction": "SW",
+      "side": "clockwise/right side of door when facing outward from room center",
+      "status": "available",
+      "suggested_use": "Artifact, statue, station indicator, decorative clue, or future interaction point."
+    },
+    {
+      "id": "great-hall-niche-w-ccw",
+      "owned_by_door_direction": "W",
+      "side": "counterclockwise/left side of door when facing outward from room center",
+      "status": "available",
+      "suggested_use": "Artifact, statue, station indicator, decorative clue, or future interaction point."
+    },
+    {
+      "id": "great-hall-niche-w-cw",
+      "owned_by_door_direction": "W",
+      "side": "clockwise/right side of door when facing outward from room center",
+      "status": "available",
+      "suggested_use": "Artifact, statue, station indicator, decorative clue, or future interaction point."
+    },
+    {
+      "id": "great-hall-niche-nw-ccw",
+      "owned_by_door_direction": "NW",
+      "side": "counterclockwise/left side of door when facing outward from room center",
+      "status": "available",
+      "suggested_use": "Artifact, statue, station indicator, decorative clue, or future interaction point."
+    },
+    {
+      "id": "great-hall-niche-nw-cw",
+      "owned_by_door_direction": "NW",
+      "side": "clockwise/right side of door when facing outward from room center",
+      "status": "available",
+      "suggested_use": "Artifact, statue, station indicator, decorative clue, or future interaction point."
+    }
+  ],
+  "systems": {
+    "doorway_architecture": {
+      "pattern": {
+        "left_alcove": "Hidden Knowledge / Knowledge Vault",
+        "center_door": "Room Identity",
+        "right_alcove": "Active Specialization"
+      }
+    },
+    "key_forge_rune_gems": {
+      "purpose": "Gamified password/key entry without a keyboard.",
+      "ascii_target": 94,
+      "combination_capacity": 96,
+      "shapes": [
+        "Round",
+        "Princess",
+        "Emerald",
+        "Pear",
+        "Marquise",
+        "Heart",
+        "Oval",
+        "Trillion"
+      ],
+      "colors": [
+        "Red",
+        "Orange",
+        "Yellow",
+        "Green",
+        "Blue",
+        "Indigo",
+        "Violet",
+        "White",
+        "Black",
+        "Gold",
+        "Silver",
+        "Amber"
+      ]
+    }
+  }
+}

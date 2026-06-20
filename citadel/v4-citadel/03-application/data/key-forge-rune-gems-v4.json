@@ -1,0 +1,779 @@
+{
+  "version": "v4-citadel",
+  "capacity": 96,
+  "target_characters": "Printable ASCII 33-126, excluding space.",
+  "mapping_style": "sequential_template",
+  "warning": "This is a technical template. The final lore-friendly mapping may be curated later.",
+  "mapping": [
+    {
+      "index": 0,
+      "shape": "Round",
+      "color": "Red",
+      "reserved": false,
+      "ascii_code": 33,
+      "character": "!"
+    },
+    {
+      "index": 1,
+      "shape": "Round",
+      "color": "Orange",
+      "reserved": false,
+      "ascii_code": 34,
+      "character": "\""
+    },
+    {
+      "index": 2,
+      "shape": "Round",
+      "color": "Yellow",
+      "reserved": false,
+      "ascii_code": 35,
+      "character": "#"
+    },
+    {
+      "index": 3,
+      "shape": "Round",
+      "color": "Green",
+      "reserved": false,
+      "ascii_code": 36,
+      "character": "$"
+    },
+    {
+      "index": 4,
+      "shape": "Round",
+      "color": "Blue",
+      "reserved": false,
+      "ascii_code": 37,
+      "character": "%"
+    },
+    {
+      "index": 5,
+      "shape": "Round",
+      "color": "Indigo",
+      "reserved": false,
+      "ascii_code": 38,
+      "character": "&"
+    },
+    {
+      "index": 6,
+      "shape": "Round",
+      "color": "Violet",
+      "reserved": false,
+      "ascii_code": 39,
+      "character": "'"
+    },
+    {
+      "index": 7,
+      "shape": "Round",
+      "color": "White",
+      "reserved": false,
+      "ascii_code": 40,
+      "character": "("
+    },
+    {
+      "index": 8,
+      "shape": "Round",
+      "color": "Black",
+      "reserved": false,
+      "ascii_code": 41,
+      "character": ")"
+    },
+    {
+      "index": 9,
+      "shape": "Round",
+      "color": "Gold",
+      "reserved": false,
+      "ascii_code": 42,
+      "character": "*"
+    },
+    {
+      "index": 10,
+      "shape": "Round",
+      "color": "Silver",
+      "reserved": false,
+      "ascii_code": 43,
+      "character": "+"
+    },
+    {
+      "index": 11,
+      "shape": "Round",
+      "color": "Amber",
+      "reserved": false,
+      "ascii_code": 44,
+      "character": ","
+    },
+    {
+      "index": 12,
+      "shape": "Princess",
+      "color": "Red",
+      "reserved": false,
+      "ascii_code": 45,
+      "character": "-"
+    },
+    {
+      "index": 13,
+      "shape": "Princess",
+      "color": "Orange",
+      "reserved": false,
+      "ascii_code": 46,
+      "character": "."
+    },
+    {
+      "index": 14,
+      "shape": "Princess",
+      "color": "Yellow",
+      "reserved": false,
+      "ascii_code": 47,
+      "character": "/"
+    },
+    {
+      "index": 15,
+      "shape": "Princess",
+      "color": "Green",
+      "reserved": false,
+      "ascii_code": 48,
+      "character": "0"
+    },
+    {
+      "index": 16,
+      "shape": "Princess",
+      "color": "Blue",
+      "reserved": false,
+      "ascii_code": 49,
+      "character": "1"
+    },
+    {
+      "index": 17,
+      "shape": "Princess",
+      "color": "Indigo",
+      "reserved": false,
+      "ascii_code": 50,
+      "character": "2"
+    },
+    {
+      "index": 18,
+      "shape": "Princess",
+      "color": "Violet",
+      "reserved": false,
+      "ascii_code": 51,
+      "character": "3"
+    },
+    {
+      "index": 19,
+      "shape": "Princess",
+      "color": "White",
+      "reserved": false,
+      "ascii_code": 52,
+      "character": "4"
+    },
+    {
+      "index": 20,
+      "shape": "Princess",
+      "color": "Black",
+      "reserved": false,
+      "ascii_code": 53,
+      "character": "5"
+    },
+    {
+      "index": 21,
+      "shape": "Princess",
+      "color": "Gold",
+      "reserved": false,
+      "ascii_code": 54,
+      "character": "6"
+    },
+    {
+      "index": 22,
+      "shape": "Princess",
+      "color": "Silver",
+      "reserved": false,
+      "ascii_code": 55,
+      "character": "7"
+    },
+    {
+      "index": 23,
+      "shape": "Princess",
+      "color": "Amber",
+      "reserved": false,
+      "ascii_code": 56,
+      "character": "8"
+    },
+    {
+      "index": 24,
+      "shape": "Emerald",
+      "color": "Red",
+      "reserved": false,
+      "ascii_code": 57,
+      "character": "9"
+    },
+    {
+      "index": 25,
+      "shape": "Emerald",
+      "color": "Orange",
+      "reserved": false,
+      "ascii_code": 58,
+      "character": ":"
+    },
+    {
+      "index": 26,
+      "shape": "Emerald",
+      "color": "Yellow",
+      "reserved": false,
+      "ascii_code": 59,
+      "character": ";"
+    },
+    {
+      "index": 27,
+      "shape": "Emerald",
+      "color": "Green",
+      "reserved": false,
+      "ascii_code": 60,
+      "character": "<"
+    },
+    {
+      "index": 28,
+      "shape": "Emerald",
+      "color": "Blue",
+      "reserved": false,
+      "ascii_code": 61,
+      "character": "="
+    },
+    {
+      "index": 29,
+      "shape": "Emerald",
+      "color": "Indigo",
+      "reserved": false,
+      "ascii_code": 62,
+      "character": ">"
+    },
+    {
+      "index": 30,
+      "shape": "Emerald",
+      "color": "Violet",
+      "reserved": false,
+      "ascii_code": 63,
+      "character": "?"
+    },
+    {
+      "index": 31,
+      "shape": "Emerald",
+      "color": "White",
+      "reserved": false,
+      "ascii_code": 64,
+      "character": "@"
+    },
+    {
+      "index": 32,
+      "shape": "Emerald",
+      "color": "Black",
+      "reserved": false,
+      "ascii_code": 65,
+      "character": "A"
+    },
+    {
+      "index": 33,
+      "shape": "Emerald",
+      "color": "Gold",
+      "reserved": false,
+      "ascii_code": 66,
+      "character": "B"
+    },
+    {
+      "index": 34,
+      "shape": "Emerald",
+      "color": "Silver",
+      "reserved": false,
+      "ascii_code": 67,
+      "character": "C"
+    },
+    {
+      "index": 35,
+      "shape": "Emerald",
+      "color": "Amber",
+      "reserved": false,
+      "ascii_code": 68,
+      "character": "D"
+    },
+    {
+      "index": 36,
+      "shape": "Pear",
+      "color": "Red",
+      "reserved": false,
+      "ascii_code": 69,
+      "character": "E"
+    },
+    {
+      "index": 37,
+      "shape": "Pear",
+      "color": "Orange",
+      "reserved": false,
+      "ascii_code": 70,
+      "character": "F"
+    },
+    {
+      "index": 38,
+      "shape": "Pear",
+      "color": "Yellow",
+      "reserved": false,
+      "ascii_code": 71,
+      "character": "G"
+    },
+    {
+      "index": 39,
+      "shape": "Pear",
+      "color": "Green",
+      "reserved": false,
+      "ascii_code": 72,
+      "character": "H"
+    },
+    {
+      "index": 40,
+      "shape": "Pear",
+      "color": "Blue",
+      "reserved": false,
+      "ascii_code": 73,
+      "character": "I"
+    },
+    {
+      "index": 41,
+      "shape": "Pear",
+      "color": "Indigo",
+      "reserved": false,
+      "ascii_code": 74,
+      "character": "J"
+    },
+    {
+      "index": 42,
+      "shape": "Pear",
+      "color": "Violet",
+      "reserved": false,
+      "ascii_code": 75,
+      "character": "K"
+    },
+    {
+      "index": 43,
+      "shape": "Pear",
+      "color": "White",
+      "reserved": false,
+      "ascii_code": 76,
+      "character": "L"
+    },
+    {
+      "index": 44,
+      "shape": "Pear",
+      "color": "Black",
+      "reserved": false,
+      "ascii_code": 77,
+      "character": "M"
+    },
+    {
+      "index": 45,
+      "shape": "Pear",
+      "color": "Gold",
+      "reserved": false,
+      "ascii_code": 78,
+      "character": "N"
+    },
+    {
+      "index": 46,
+      "shape": "Pear",
+      "color": "Silver",
+      "reserved": false,
+      "ascii_code": 79,
+      "character": "O"
+    },
+    {
+      "index": 47,
+      "shape": "Pear",
+      "color": "Amber",
+      "reserved": false,
+      "ascii_code": 80,
+      "character": "P"
+    },
+    {
+      "index": 48,
+      "shape": "Marquise",
+      "color": "Red",
+      "reserved": false,
+      "ascii_code": 81,
+      "character": "Q"
+    },
+    {
+      "index": 49,
+      "shape": "Marquise",
+      "color": "Orange",
+      "reserved": false,
+      "ascii_code": 82,
+      "character": "R"
+    },
+    {
+      "index": 50,
+      "shape": "Marquise",
+      "color": "Yellow",
+      "reserved": false,
+      "ascii_code": 83,
+      "character": "S"
+    },
+    {
+      "index": 51,
+      "shape": "Marquise",
+      "color": "Green",
+      "reserved": false,
+      "ascii_code": 84,
+      "character": "T"
+    },
+    {
+      "index": 52,
+      "shape": "Marquise",
+      "color": "Blue",
+      "reserved": false,
+      "ascii_code": 85,
+      "character": "U"
+    },
+    {
+      "index": 53,
+      "shape": "Marquise",
+      "color": "Indigo",
+      "reserved": false,
+      "ascii_code": 86,
+      "character": "V"
+    },
+    {
+      "index": 54,
+      "shape": "Marquise",
+      "color": "Violet",
+      "reserved": false,
+      "ascii_code": 87,
+      "character": "W"
+    },
+    {
+      "index": 55,
+      "shape": "Marquise",
+      "color": "White",
+      "reserved": false,
+      "ascii_code": 88,
+      "character": "X"
+    },
+    {
+      "index": 56,
+      "shape": "Marquise",
+      "color": "Black",
+      "reserved": false,
+      "ascii_code": 89,
+      "character": "Y"
+    },
+    {
+      "index": 57,
+      "shape": "Marquise",
+      "color": "Gold",
+      "reserved": false,
+      "ascii_code": 90,
+      "character": "Z"
+    },
+    {
+      "index": 58,
+      "shape": "Marquise",
+      "color": "Silver",
+      "reserved": false,
+      "ascii_code": 91,
+      "character": "["
+    },
+    {
+      "index": 59,
+      "shape": "Marquise",
+      "color": "Amber",
+      "reserved": false,
+      "ascii_code": 92,
+      "character": "\\"
+    },
+    {
+      "index": 60,
+      "shape": "Heart",
+      "color": "Red",
+      "reserved": false,
+      "ascii_code": 93,
+      "character": "]"
+    },
+    {
+      "index": 61,
+      "shape": "Heart",
+      "color": "Orange",
+      "reserved": false,
+      "ascii_code": 94,
+      "character": "^"
+    },
+    {
+      "index": 62,
+      "shape": "Heart",
+      "color": "Yellow",
+      "reserved": false,
+      "ascii_code": 95,
+      "character": "_"
+    },
+    {
+      "index": 63,
+      "shape": "Heart",
+      "color": "Green",
+      "reserved": false,
+      "ascii_code": 96,
+      "character": "`"
+    },
+    {
+      "index": 64,
+      "shape": "Heart",
+      "color": "Blue",
+      "reserved": false,
+      "ascii_code": 97,
+      "character": "a"
+    },
+    {
+      "index": 65,
+      "shape": "Heart",
+      "color": "Indigo",
+      "reserved": false,
+      "ascii_code": 98,
+      "character": "b"
+    },
+    {
+      "index": 66,
+      "shape": "Heart",
+      "color": "Violet",
+      "reserved": false,
+      "ascii_code": 99,
+      "character": "c"
+    },
+    {
+      "index": 67,
+      "shape": "Heart",
+      "color": "White",
+      "reserved": false,
+      "ascii_code": 100,
+      "character": "d"
+    },
+    {
+      "index": 68,
+      "shape": "Heart",
+      "color": "Black",
+      "reserved": false,
+      "ascii_code": 101,
+      "character": "e"
+    },
+    {
+      "index": 69,
+      "shape": "Heart",
+      "color": "Gold",
+      "reserved": false,
+      "ascii_code": 102,
+      "character": "f"
+    },
+    {
+      "index": 70,
+      "shape": "Heart",
+      "color": "Silver",
+      "reserved": false,
+      "ascii_code": 103,
+      "character": "g"
+    },
+    {
+      "index": 71,
+      "shape": "Heart",
+      "color": "Amber",
+      "reserved": false,
+      "ascii_code": 104,
+      "character": "h"
+    },
+    {
+      "index": 72,
+      "shape": "Oval",
+      "color": "Red",
+      "reserved": false,
+      "ascii_code": 105,
+      "character": "i"
+    },
+    {
+      "index": 73,
+      "shape": "Oval",
+      "color": "Orange",
+      "reserved": false,
+      "ascii_code": 106,
+      "character": "j"
+    },
+    {
+      "index": 74,
+      "shape": "Oval",
+      "color": "Yellow",
+      "reserved": false,
+      "ascii_code": 107,
+      "character": "k"
+    },
+    {
+      "index": 75,
+      "shape": "Oval",
+      "color": "Green",
+      "reserved": false,
+      "ascii_code": 108,
+      "character": "l"
+    },
+    {
+      "index": 76,
+      "shape": "Oval",
+      "color": "Blue",
+      "reserved": false,
+      "ascii_code": 109,
+      "character": "m"
+    },
+    {
+      "index": 77,
+      "shape": "Oval",
+      "color": "Indigo",
+      "reserved": false,
+      "ascii_code": 110,
+      "character": "n"
+    },
+    {
+      "index": 78,
+      "shape": "Oval",
+      "color": "Violet",
+      "reserved": false,
+      "ascii_code": 111,
+      "character": "o"
+    },
+    {
+      "index": 79,
+      "shape": "Oval",
+      "color": "White",
+      "reserved": false,
+      "ascii_code": 112,
+      "character": "p"
+    },
+    {
+      "index": 80,
+      "shape": "Oval",
+      "color": "Black",
+      "reserved": false,
+      "ascii_code": 113,
+      "character": "q"
+    },
+    {
+      "index": 81,
+      "shape": "Oval",
+      "color": "Gold",
+      "reserved": false,
+      "ascii_code": 114,
+      "character": "r"
+    },
+    {
+      "index": 82,
+      "shape": "Oval",
+      "color": "Silver",
+      "reserved": false,
+      "ascii_code": 115,
+      "character": "s"
+    },
+    {
+      "index": 83,
+      "shape": "Oval",
+      "color": "Amber",
+      "reserved": false,
+      "ascii_code": 116,
+      "character": "t"
+    },
+    {
+      "index": 84,
+      "shape": "Trillion",
+      "color": "Red",
+      "reserved": false,
+      "ascii_code": 117,
+      "character": "u"
+    },
+    {
+      "index": 85,
+      "shape": "Trillion",
+      "color": "Orange",
+      "reserved": false,
+      "ascii_code": 118,
+      "character": "v"
+    },
+    {
+      "index": 86,
+      "shape": "Trillion",
+      "color": "Yellow",
+      "reserved": false,
+      "ascii_code": 119,
+      "character": "w"
+    },
+    {
+      "index": 87,
+      "shape": "Trillion",
+      "color": "Green",
+      "reserved": false,
+      "ascii_code": 120,
+      "character": "x"
+    },
+    {
+      "index": 88,
+      "shape": "Trillion",
+      "color": "Blue",
+      "reserved": false,
+      "ascii_code": 121,
+      "character": "y"
+    },
+    {
+      "index": 89,
+      "shape": "Trillion",
+      "color": "Indigo",
+      "reserved": false,
+      "ascii_code": 122,
+      "character": "z"
+    },
+    {
+      "index": 90,
+      "shape": "Trillion",
+      "color": "Violet",
+      "reserved": false,
+      "ascii_code": 123,
+      "character": "{"
+    },
+    {
+      "index": 91,
+      "shape": "Trillion",
+      "color": "White",
+      "reserved": false,
+      "ascii_code": 124,
+      "character": "|"
+    },
+    {
+      "index": 92,
+      "shape": "Trillion",
+      "color": "Black",
+      "reserved": false,
+      "ascii_code": 125,
+      "character": "}"
+    },
+    {
+      "index": 93,
+      "shape": "Trillion",
+      "color": "Gold",
+      "reserved": false,
+      "ascii_code": 126,
+      "character": "~"
+    },
+    {
+      "index": 94,
+      "shape": "Trillion",
+      "color": "Silver",
+      "reserved": true,
+      "ascii_code": null,
+      "character": null,
+      "reserved_for": "future_control_or_special_action"
+    },
+    {
+      "index": 95,
+      "shape": "Trillion",
+      "color": "Amber",
+      "reserved": true,
+      "ascii_code": null,
+      "character": null,
+      "reserved_for": "future_control_or_special_action"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+[
+  {
+    "id": "great-hall-niche-n-ccw",
+    "owned_by_door_direction": "N",
+    "side": "counterclockwise/left side of door when facing outward from room center",
+    "status": "available",
+    "suggested_use": "Artifact, statue, station indicator, decorative clue, or future interaction point."
+  },
+  {
+    "id": "great-hall-niche-n-cw",
+    "owned_by_door_direction": "N",
+    "side": "clockwise/right side of door when facing outward from room center",
+    "status": "available",
+    "suggested_use": "Artifact, statue, station indicator, decorative clue, or future interaction point."
+  },
+  {
+    "id": "great-hall-niche-ne-ccw",
+    "owned_by_door_direction": "NE",
+    "side": "counterclockwise/left side of door when facing outward from room center",
+    "status": "available",
+    "suggested_use": "Artifact, statue, station indicator, decorative clue, or future interaction point."
+  },
+  {
+    "id": "great-hall-niche-ne-cw",
+    "owned_by_door_direction": "NE",
+    "side": "clockwise/right side of door when facing outward from room center",
+    "status": "available",
+    "suggested_use": "Artifact, statue, station indicator, decorative clue, or future interaction point."
+  },
+  {
+    "id": "great-hall-niche-e-ccw",
+    "owned_by_door_direction": "E",
+    "side": "counterclockwise/left side of door when facing outward from room center",
+    "status": "available",
+    "suggested_use": "Artifact, statue, station indicator, decorative clue, or future interaction point."
+  },
+  {
+    "id": "great-hall-niche-e-cw",
+    "owned_by_door_direction": "E",
+    "side": "clockwise/right side of door when facing outward from room center",
+    "status": "available",
+    "suggested_use": "Artifact, statue, station indicator, decorative clue, or future interaction point."
+  },
+  {
+    "id": "great-hall-niche-se-ccw",
+    "owned_by_door_direction": "SE",
+    "side": "counterclockwise/left side of door when facing outward from room center",
+    "status": "available",
+    "suggested_use": "Artifact, statue, station indicator, decorative clue, or future interaction point."
+  },
+  {
+    "id": "great-hall-niche-se-cw",
+    "owned_by_door_direction": "SE",
+    "side": "clockwise/right side of door when facing outward from room center",
+    "status": "available",
+    "suggested_use": "Artifact, statue, station indicator, decorative clue, or future interaction point."
+  },
+  {
+    "id": "great-hall-niche-s-ccw",
+    "owned_by_door_direction": "S",
+    "side": "counterclockwise/left side of door when facing outward from room center",
+    "status": "available",
+    "suggested_use": "Artifact, statue, station indicator, decorative clue, or future interaction point."
+  },
+  {
+    "id": "great-hall-niche-s-cw",
+    "owned_by_door_direction": "S",
+    "side": "clockwise/right side of door when facing outward from room center",
+    "status": "available",
+    "suggested_use": "Artifact, statue, station indicator, decorative clue, or future interaction point."
+  },
+  {
+    "id": "great-hall-niche-sw-ccw",
+    "owned_by_door_direction": "SW",
+    "side": "counterclockwise/left side of door when facing outward from room center",
+    "status": "available",
+    "suggested_use": "Artifact, statue, station indicator, decorative clue, or future interaction point."
+  },
+  {
+    "id": "great-hall-niche-sw-cw",
+    "owned_by_door_direction": "SW",
+    "side": "clockwise/right side of door when facing outward from room center",
+    "status": "available",
+    "suggested_use": "Artifact, statue, station indicator, decorative clue, or future interaction point."
+  },
+  {
+    "id": "great-hall-niche-w-ccw",
+    "owned_by_door_direction": "W",
+    "side": "counterclockwise/left side of door when facing outward from room center",
+    "status": "available",
+    "suggested_use": "Artifact, statue, station indicator, decorative clue, or future interaction point."
+  },
+  {
+    "id": "great-hall-niche-w-cw",
+    "owned_by_door_direction": "W",
+    "side": "clockwise/right side of door when facing outward from room center",
+    "status": "available",
+    "suggested_use": "Artifact, statue, station indicator, decorative clue, or future interaction point."
+  },
+  {
+    "id": "great-hall-niche-nw-ccw",
+    "owned_by_door_direction": "NW",
+    "side": "counterclockwise/left side of door when facing outward from room center",
+    "status": "available",
+    "suggested_use": "Artifact, statue, station indicator, decorative clue, or future interaction point."
+  },
+  {
+    "id": "great-hall-niche-nw-cw",
+    "owned_by_door_direction": "NW",
+    "side": "clockwise/right side of door when facing outward from room center",
+    "status": "available",
+    "suggested_use": "Artifact, statue, station indicator, decorative clue, or future interaction point."
+  }
+]

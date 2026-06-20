@@ -1,0 +1,1 @@
+Grand entry hall, vaulted ceilings, welcoming transition space.

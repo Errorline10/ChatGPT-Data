@@ -1,0 +1,1 @@
+Mountain-top citadel above clouds, stone bridge approach, cinematic fantasy realism.

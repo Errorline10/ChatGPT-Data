@@ -1,0 +1,43 @@
+{
+  "version": "v3-citadel",
+  "snapshot_type": "complete_reconstructed_working_snapshot",
+  "rooms": [
+    {
+      "id": "citadel-exterior",
+      "name": "Citadel Exterior"
+    },
+    {
+      "id": "entry-hall",
+      "name": "Entry Hall",
+      "canonical_details": {
+        "doors": 4
+      }
+    },
+    {
+      "id": "great-hall",
+      "name": "Great Hall",
+      "canonical_details": {
+        "doors": 8,
+        "wall_niches": 16
+      }
+    },
+    {
+      "id": "small-library",
+      "name": "Small Library"
+    },
+    {
+      "id": "small-bedroom",
+      "name": "Small Bedroom"
+    },
+    {
+      "id": "visual-intelligence-room",
+      "name": "Visual Intelligence Room"
+    }
+  ],
+  "systems": [
+    "doorway-architecture",
+    "knowledge-vault-vaulted-key",
+    "key-forge-rune-gems"
+  ],
+  "note": "This snapshot includes detailed room definitions and render prompts based on the active conversation context."
+}

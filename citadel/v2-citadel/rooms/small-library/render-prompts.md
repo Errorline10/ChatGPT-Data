@@ -1,0 +1,1 @@
+Private library, dark wood shelves, brass lamps, mountain view.

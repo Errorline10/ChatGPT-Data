@@ -1,0 +1,155 @@
+[
+  {
+    "room_id": "citadel-exterior",
+    "room_name": "Citadel Exterior",
+    "direction": "N",
+    "name": "Main Citadel Entrance",
+    "connects_to": "entry-hall",
+    "status": "known",
+    "notes": "Primary entrance into the Entry Hall."
+  },
+  {
+    "room_id": "citadel-exterior",
+    "room_name": "Citadel Exterior",
+    "direction": "S",
+    "name": "Stone Bridge / Approach Path",
+    "connects_to": "outside-approach",
+    "status": "known",
+    "notes": "Not a room door; this is the approach direction."
+  },
+  {
+    "room_id": "entry-hall",
+    "room_name": "Entry Hall",
+    "direction": "N",
+    "name": "North Door / Unassigned Passage",
+    "connects_to": "future-room-or-passage",
+    "status": "reserved",
+    "notes": "Reserved because only the four-door count is known; exact use may be updated from source files."
+  },
+  {
+    "room_id": "entry-hall",
+    "room_name": "Entry Hall",
+    "direction": "E",
+    "name": "East Door to Great Hall",
+    "connects_to": "great-hall",
+    "status": "working_assignment",
+    "notes": "Assigned in v4 so the Great Hall can preserve its known South Door to Small Library."
+  },
+  {
+    "room_id": "entry-hall",
+    "room_name": "Entry Hall",
+    "direction": "S",
+    "name": "South Door to Citadel Exterior",
+    "connects_to": "citadel-exterior",
+    "status": "known",
+    "notes": "Return to the outside/exterior approach."
+  },
+  {
+    "room_id": "entry-hall",
+    "room_name": "Entry Hall",
+    "direction": "W",
+    "name": "West Door / Unassigned Passage",
+    "connects_to": "future-room-or-passage",
+    "status": "reserved",
+    "notes": "Reserved for future or previously documented room not yet loaded into this chat."
+  },
+  {
+    "room_id": "great-hall",
+    "room_name": "Great Hall",
+    "direction": "N",
+    "name": "North Door / Hall of Discovery Candidate",
+    "connects_to": "hall-of-discovery-candidate",
+    "status": "legacy_candidate",
+    "notes": "Hall of Discovery was mentioned in earlier context, but detailed room documentation is not loaded here."
+  },
+  {
+    "room_id": "great-hall",
+    "room_name": "Great Hall",
+    "direction": "NE",
+    "name": "Northeast Door / Future Room",
+    "connects_to": "future-room-ne",
+    "status": "reserved",
+    "notes": "Reserved for expansion."
+  },
+  {
+    "room_id": "great-hall",
+    "room_name": "Great Hall",
+    "direction": "E",
+    "name": "East Door to Visual Intelligence Room",
+    "connects_to": "visual-intelligence-room",
+    "status": "working_assignment",
+    "notes": "Uses the left/right alcove doorway system."
+  },
+  {
+    "room_id": "great-hall",
+    "room_name": "Great Hall",
+    "direction": "SE",
+    "name": "Southeast Door / Future Room",
+    "connects_to": "future-room-se",
+    "status": "reserved",
+    "notes": "Reserved for expansion."
+  },
+  {
+    "room_id": "great-hall",
+    "room_name": "Great Hall",
+    "direction": "S",
+    "name": "South Door to Small Library",
+    "connects_to": "small-library",
+    "status": "known",
+    "notes": "Binding detail from project context: South door returns to the Small Library."
+  },
+  {
+    "room_id": "great-hall",
+    "room_name": "Great Hall",
+    "direction": "SW",
+    "name": "Southwest Door to Small Bedroom",
+    "connects_to": "small-bedroom",
+    "status": "working_assignment",
+    "notes": "Working placement for the personal quarters."
+  },
+  {
+    "room_id": "great-hall",
+    "room_name": "Great Hall",
+    "direction": "W",
+    "name": "West Door to Entry Hall",
+    "connects_to": "entry-hall",
+    "status": "working_assignment",
+    "notes": "Working placement to keep Great Hall South assigned to Small Library."
+  },
+  {
+    "room_id": "great-hall",
+    "room_name": "Great Hall",
+    "direction": "NW",
+    "name": "Northwest Door / Future Room",
+    "connects_to": "future-room-nw",
+    "status": "reserved",
+    "notes": "Reserved for expansion."
+  },
+  {
+    "room_id": "small-library",
+    "room_name": "Small Library",
+    "direction": "N",
+    "name": "North Door to Great Hall",
+    "connects_to": "great-hall",
+    "status": "known_reciprocal",
+    "notes": "Reciprocal of Great Hall South Door."
+  },
+  {
+    "room_id": "small-bedroom",
+    "room_name": "Small Bedroom",
+    "direction": "NE",
+    "name": "Northeast Door to Great Hall",
+    "connects_to": "great-hall",
+    "status": "working_assignment",
+    "notes": "Reciprocal of Great Hall Southwest Door in the v4 working compass map."
+  },
+  {
+    "room_id": "visual-intelligence-room",
+    "room_name": "Visual Intelligence Room",
+    "direction": "W",
+    "name": "West Door to Great Hall",
+    "connects_to": "great-hall",
+    "status": "working_assignment",
+    "notes": "Reciprocal of Great Hall East Door."
+  }
+]

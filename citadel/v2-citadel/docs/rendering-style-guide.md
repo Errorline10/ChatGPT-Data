@@ -1,0 +1,1 @@
+Canonical style: fantasy realism, mountain citadel, cinematic lighting, detailed architecture, consistent materials and scale.

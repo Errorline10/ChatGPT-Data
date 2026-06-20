@@ -1,0 +1,22 @@
+# File Inventory
+
+- README.md
+- citadel-v3.json
+- docs/rendering-style-guide-v3.md
+- docs/room-index-v3.md
+- docs/world-map-v3.md
+- rooms/citadel-exterior/render-prompts-v3.md
+- rooms/citadel-exterior/room-definition-v3.md
+- rooms/entry-hall/render-prompts-v3.md
+- rooms/entry-hall/room-definition-v3.md
+- rooms/great-hall/render-prompts-v3.md
+- rooms/great-hall/room-definition-v3.md
+- rooms/small-bedroom/render-prompts-v3.md
+- rooms/small-bedroom/room-definition-v3.md
+- rooms/small-library/render-prompts-v3.md
+- rooms/small-library/room-definition-v3.md
+- rooms/visual-intelligence-room/render-prompts-v3.md
+- rooms/visual-intelligence-room/room-definition-v3.md
+- systems/doorway-architecture-v3.md
+- systems/key-forge-ascii-map-template-v3.json
+- systems/key-forge-rune-gems-v3.md

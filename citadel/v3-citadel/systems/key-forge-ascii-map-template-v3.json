@@ -1,0 +1,31 @@
+{
+  "version": "v3-citadel",
+  "system": "key-forge-rune-gems",
+  "shapes": [
+    "Round",
+    "Princess",
+    "Emerald",
+    "Pear",
+    "Marquise",
+    "Heart",
+    "Oval",
+    "Trillion"
+  ],
+  "colors": [
+    "Red",
+    "Orange",
+    "Yellow",
+    "Green",
+    "Blue",
+    "Indigo",
+    "Violet",
+    "White",
+    "Black",
+    "Gold",
+    "Silver",
+    "Amber"
+  ],
+  "capacity": 96,
+  "target_printable_password_ascii_without_space": 94,
+  "mapping_note": "Map combinations sequentially or by curated lore-safe order. Two spare combinations remain available for control actions, null, confirmation, reset, or reserved future use."
+}

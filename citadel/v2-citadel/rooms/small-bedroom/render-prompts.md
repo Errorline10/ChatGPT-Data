@@ -1,0 +1,1 @@
+Comfortable personal quarters, warm lighting, practical furnishings.

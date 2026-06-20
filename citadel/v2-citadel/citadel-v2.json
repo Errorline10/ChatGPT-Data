@@ -1,0 +1,15 @@
+{
+  "version": "v2-citadel",
+  "rooms": [
+    "citadel-exterior",
+    "entry-hall",
+    "great-hall",
+    "small-library",
+    "small-bedroom",
+    "visual-intelligence-room"
+  ],
+  "systems": [
+    "doorway-architecture",
+    "key-forge-rune-gems"
+  ]
+}
